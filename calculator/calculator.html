@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="header">
+                <div class="logo">
+                    <img src="images/calculator-solid.svg" alt="" style="height: 30px; width: 20px; margin-left: 4px; margin-top: 1px;">
+                </div>
+                <div class="title">
+                    <p>CALCULATOR</p>
+                </div>
+            </div>
+            <div class="output">
+                <p id="second"></p>
+                <p id="first"></p>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="row1">
+                <button class="ac" onclick="ac()" style="color: blanchedalmond;">AC</button>
+                <button class="del" onclick="del()" style="color: blanchedalmond;">Del</button>
+                <button class="percent" onclick="percent()" style="color: blanchedalmond;">%</button>
+                <button class="multiply" onclick="multiply()" style="color: blanchedalmond; font-size: 30px; font-weight: bold;">×</button>
+            </div>
+            <div class="row2">
+                <button class="num7" onclick="num7()" style="color: antiquewhite;">7</button>
+                <button class="num8" onclick="num8()" style="color: antiquewhite;">8</button>
+                <button class="num9" onclick="num9()" style="color: antiquewhite;">9</button>
+                <button class="divide" onclick="divide()" style="color: blanchedalmond; font-size: 30px; font-weight: bold;">÷</button>
+            </div>
+            <div class="row3">
+                <button class="num4" onclick="num4()" style="color: antiquewhite;">4</button>
+                <button class="num5" onclick="num5()" style="color: antiquewhite;">5</button>
+                <button class="num6" onclick="num6()" style="color: antiquewhite;">6</button>
+                <button class="add" onclick="add()" style="color: blanchedalmond; font-size: 30px; font-weight: bold;">+</button>
+            </div>
+            <div class="row4">
+                <button class="num1" onclick="num1()" style="color: antiquewhite;">1</button>
+                <button class="num2" onclick="num2()" style="color: antiquewhite;">2</button>
+                <button class="num3" onclick="num3()" style="color: antiquewhite;">3</button>
+                <button class="subtract" onclick="subtract()" style="color: blanchedalmond; font-size: 30px; font-weight: bold;">-</button>
+            </div>
+            <div class="row5">
+                <button class="point" onclick="point()" style="font-size: 40px; color: antiquewhite;">.</button>
+                <button class="num0" onclick="num0()" style="color: antiquewhite;">0</button>
+                <button class="equal" onclick="equal()" style="color: blanchedalmond; font-size: 40px;" >=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>

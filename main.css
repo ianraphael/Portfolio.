@@ -1,0 +1,16 @@
+@media (min-width: 576px) {
+    .ian-sm {
+        width: 25% !important;
+    }
+    .btn-sm-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: 0.3rem;
+    }
+    .flame-sm {
+        width: 20% !important;
+    }
+    .footer-logo {
+        width: 50px !important;
+    }
+}

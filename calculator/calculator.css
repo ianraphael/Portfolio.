@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.658);
+    position: relative;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/*display*/
+.screen {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.screen .header {
+    background-color: rgb(87, 87, 87);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border-radius: 10px;
+}
+.screen .header .logo {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.screen .header .logo p {
+    justify-content: center;
+    align-content: center;
+}
+.screen .header .title {
+    background-color:transparent;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.screen .header p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.screen .output {
+    background-color: rgb(138, 133, 133);
+    
+}
+.screen .output #first{
+    height: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.screen .output #second{
+    height: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 75%;
+}
+/*buttons*/
+.buttons {
+    background-color: transparent;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 5px;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.buttons .row1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+}
+
+.buttons .row1 button {
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    background-color: rgba(63, 63, 63, 0.534);
+    border: none;
+    border-radius: 50px;
+}
+
+.buttons .row2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+}
+.buttons .row2 button {
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    background-color: rgba(63, 63, 63, 0.534);
+    border: none;
+    border-radius: 50px;
+}
+
+.buttons .row3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+}
+.buttons .row3 button {
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    background-color: rgba(63, 63, 63, 0.534);
+    border: none;
+    border-radius: 50px;
+}
+
+.buttons .row4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+}
+.buttons .row4 button {
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    background-color: rgba(63, 63, 63, 0.534);
+    border: none;
+    border-radius: 50px;
+}
+
+.buttons .row5 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    align-items: center;
+    justify-items: center;
+}
+.buttons .row5 button {
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    background-color: rgba(63, 63, 63, 0.534);
+    border: none;
+    border-radius: 50px;
+}
+
+.buttons button:active:active {
+    background-color: rgb(54, 50, 50);
+    opacity: 100%;
+    transition: .25s;
+
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.658);
+
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-rows: 30% 70%;
+    }
+
+/*display*/
+    .screen {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 20% 80%;
+    }
+
+    .screen .header {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+    .screen .header .logo {
+        background-color: rgb(87, 87, 87);
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border-top-left-radius: 10px;
+    }
+    .screen .header .logo p {
+        justify-content: center;
+        align-content: center;
+    }
+    .screen .header .title {
+        background-color: rgb(87, 87, 87);
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border-top-right-radius: 10px;
+    }
+    .screen .header p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .screen .output {
+        background-color: rgb(138, 133, 133);
+        
+    }
+    .screen .output #first{
+        height: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        font-size: 25px;
+        font-weight: bold;
+        
+    }
+    .screen .output #second{
+        height: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        font-size: 25px;
+        font-weight: bold;
+        opacity: 75%;
+    }
+    /*display*/
+
+    /*buttons*/
+    .buttons {
+        background-color: transparent;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        padding: 5px;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+    }
+    
+    .buttons .row1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .buttons .row1 button {
+        height: 80%;
+        width: 80%;
+        font-size: 20px;
+        background-color: rgba(63, 63, 63, 0.534);
+        border: none;
+        border-radius: 50px;
+    }
+
+    .buttons .row2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-items: center;
+        justify-items: center;
+    }
+    .buttons .row2 button {
+        height: 80%;
+        width: 80%;
+        font-size: 20px;
+        background-color: rgba(63, 63, 63, 0.534);
+        border: none;
+        border-radius: 50px;
+    }
+
+    .buttons .row3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-items: center;
+        justify-items: center;
+    }
+    .buttons .row3 button {
+        height: 80%;
+        width: 80%;
+        font-size: 20px;
+        background-color: rgba(63, 63, 63, 0.534);
+        border: none;
+        border-radius: 50px;
+    }
+    
+    .buttons .row4 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-items: center;
+        justify-items: center;
+    }
+    .buttons .row4 button {
+        height: 80%;
+        width: 80%;
+        font-size: 20px;
+        background-color: rgba(63, 63, 63, 0.534);
+        border: none;
+        border-radius: 50px;
+    }
+
+    .buttons .row5 {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+        align-items: center;
+        justify-items: center;
+    }
+    .buttons .row5 button {
+        height: 80%;
+        width: 80%;
+        font-size: 20px;
+        background-color: rgba(63, 63, 63, 0.534);
+        border: none;
+        border-radius: 50px;
+    }
+
+    .buttons button:active {
+        background-color: rgb(54, 50, 50);
+        opacity: 100%;
+        transition: .25s;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
